@@ -81,6 +81,18 @@ SpeedDatingFormat %b %d, %Y                     " Vim runtime files
 SpeedDatingFormat %^v
 SpeedDatingFormat %v
 
+" Format for standart 24h time ( 13:45 )
+SpeedDatingFormat %H:%M
+" Format for standart DD MM YY Dates
+" 12. 12. 12
+SpeedDatingFormat %d%?[.]%?[ ]%m%?[.]%?[ ]%?['"]%y
+" 12. 12. 1212
+SpeedDatingFormat %d%?[.]%?[ ]%m%?[.]%?[ ]%Y
+" 12. Dec. 12
+SpeedDatingFormat %d%?[.]%?[ ]%b%?[.]%?[ ]%?['"]%y
+" 12. Dec. 1212
+SpeedDatingFormat %d%?[.]%?[ ]%b%?[.]%?[ ]%Y
+
 " }}}1
 
 let &cpo = s:cpo_save
